@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Булат Хайруллин](https://up.htmlacademy.ru/htmlcss/18/user/264303).
-* Наставник: [Дмитрий Казанцев](https://htmlacademy.ru/profile/id24186).
+* Наставник: [Дмитрий 'Drinker' Казанцев](https://htmlacademy.ru/profile/id24186).
 
 ---
 
