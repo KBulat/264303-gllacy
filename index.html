@@ -134,10 +134,9 @@
         </div>
       </section>
       <section class="features">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <p class="features-header">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
         <ul class="feature-list">
-          <li class="feature-item">
-            Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
-          </li>
           <li class="feature-item">
             Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
           </li>
@@ -163,31 +162,68 @@
           <button class="btn" type="submit" value="send">Отправить</button>
         </form>
       </div>
-      <div class="map">
-
-      </div>
-    </main>
-    <footer class="main-footer">
-      <section class="footer-menu">
-        <div class="footer-social">
-          <a href="#" class="social-btn social-btn-twitter">Твиттер</a>
-          <a href="#" class="socail-btn social-btn-instagram">Инстаграм</a>
-          <a href="#" class="socail-btn social-btn-facebook">Фейсбук</a>
-          <a href="#" class="socail-btn social-btn-vk">Вконтакте</a>
-        </div>
-        <div class="footer-info">
-          <span class="heart">Сердце</span><a href="#"><span class="footer-info-text">Для поставщиков</span></a>
-          <a href=""><span class="footer-info-text">О производстве</span></a>
-        </div>
-        <div class="footer-documents">
-          <a href="#"><span class="footer-documents-text">Наши документы</span></a>
-          <a href="#"><span class="footer-documents-text">Экологические стандарты</span></a>
-        </div>
-        <div class="footer-copyright">
-          <img src="http://via.placeholder.com/108x39" width="108" height="39" alt="HTML Academy">
-          <p>Сделано в <a href="#">HTML Academy</a> &copy; 2017</p>
+      <section class="map">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <div class="contacts">
+          <p>
+            Адрес главного офиса и офлайн магазина:
+            <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+          </p>
+          <p>
+            для заказов по телефону:
+            <b>8 812 450-25-25</b>
+            (с 10 до 20 ежедневно)
+          </p>
+          <a class="btn" href="#">Форма обратной связи</a>
         </div>
       </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-social">
+        <a href="#" class="social-btn social-btn-twitter">Твиттер</a>
+        <a href="#" class="socail-btn social-btn-instagram">Инстаграм</a>
+        <a href="#" class="socail-btn social-btn-facebook">Фейсбук</a>
+        <a href="#" class="socail-btn social-btn-vk">Вконтакте</a>
+      </div>
+      <div class="footer-menu">
+        <ul class="footer-menu-list">
+          <li class="footer-menu-item footer-menu-item-heart">
+            <a href="#">Для поставщиков</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="#">О производстве</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="#">Наши документы</a>
+          </li>
+          <li class="footer-menu-item">
+            <a href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
+        <img src="http://via.placeholder.com/108x39" width="108" height="39" alt="HTML Academy">
+        <p>Сделано в <a href="#">HTML Academy</a> &copy; 2017</p>
+      </div>
     </footer>
+
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <p class="feedback-title">Мы обязательно вам ответим!</p>
+      <form class="feedback-form" action="#" method="post">
+      <!-- Поля завернул в <p>, т.к хочу сократить использование дивов -->
+        <p>
+          <input class="feedback-field" type="text" name="feedback-name" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <input class="feedback-field" type="text" name="feedback-mail" placeholder="Ваша почта для ответа?">
+        </p>
+        <p>
+          <textarea class="feedback-textarea" type="text" name="feedback-message" placeholder="Напишите что-нибудь..."></textarea>
+        </p>
+        <button class="btn btn-feedback" type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>

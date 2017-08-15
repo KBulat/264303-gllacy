@@ -119,10 +119,11 @@
             </select>
           </fieldset>
           <fieldset class="filter-item">
-            <legend>Цена: 100 руб. - 500 руб.</legend>
-            <div class="filter-item-price">
-            <!-- Не смог найти, как сделать двойные ползунки без использования js -->
-              <input type="range" name="price" min="0" max="1000">
+            Цена: <input class="input-min" type="text" name="price-min" value="100"> руб. - <input class="input-max" type="text" name="price-max" value="500"> руб.
+            <div class="filter-price">
+              <div class="filter-slider"></div>
+              <div class="filter-toggle toggle-min"></div>
+              <div class="filter-toggle toggle-max"></div>
             </div>
           </fieldset>
           <fieldset class="filter-item">
@@ -316,26 +317,32 @@
         </ul>
       </main>
       <footer class="main-footer">
-        <section class="footer-menu">
-          <div class="footer-social">
-            <a href="#" class="social-btn social-btn-twitter">Твиттер</a>
-            <a href="#" class="socail-btn social-btn-instagram">Инстаграм</a>
-            <a href="#" class="socail-btn social-btn-facebook">Фейсбук</a>
-            <a href="#" class="socail-btn social-btn-vk">Вконтакте</a>
-          </div>
-          <div class="footer-info">
-            <span class="heart">Сердце</span><a href="#"><span class="footer-info-text">Для поставщиков</span></a>
-            <a href=""><span class="footer-info-text">О производстве</span></a>
-          </div>
-          <div class="footer-documents">
-            <a href="#"><span class="footer-documents-text">Наши документы</span></a>
-            <a href="#"><span class="footer-documents-text">Экологические стандарты</span></a>
-          </div>
-          <div class="footer-copyright">
-            <img src="http://via.placeholder.com/108x39" width="108" height="39" alt="HTML Academy">
-            <p>Сделано в <a href="#">HTML Academy</a> &copy; 2017</p>
-          </div>
-        </section>
+        <div class="footer-social">
+          <a href="#" class="social-btn social-btn-twitter">Твиттер</a>
+          <a href="#" class="socail-btn social-btn-instagram">Инстаграм</a>
+          <a href="#" class="socail-btn social-btn-facebook">Фейсбук</a>
+          <a href="#" class="socail-btn social-btn-vk">Вконтакте</a>
+        </div>
+        <div class="footer-menu">
+          <ul>
+            <li class="footer-menu-item footer-menu-item-heart">
+              <a href="#">Для поставщиков</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="#">О производстве</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="#">Наши документы</a>
+            </li>
+            <li class="footer-menu-item">
+              <a href="#">Экологические стандарты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-copyright">
+          <img src="http://via.placeholder.com/108x39" width="108" height="39" alt="HTML Academy">
+          <p>Сделано в <a href="#">HTML Academy</a> &copy; 2017</p>
+        </div>
       </footer>
   </body>
 </html>
