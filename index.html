@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <input class="slider-input" type="radio" id="btn-1" name="toggle">
+    <input class="slider-input" type="radio" id="btn-1" name="toggle" checked>
     <input class="slider-input" type="radio" id="btn-2" name="toggle">
     <input class="slider-input" type="radio" id="btn-3" name="toggle">
     <header class="main-header">
@@ -31,6 +31,7 @@
           <li><a href="#">Поиск</a>
             <div class="popup-search">
               <form class="search" action="#" method="get">
+                <label for="search-field">Что ищем?</label>
                 <input id="search-field" type="text" name="search-field" placeholder="Что ищем?">
               </form>
             </div>
@@ -39,9 +40,11 @@
             <div class="popup-login">
               <form class="" action="#" method="get">
                 <div class="form-field">
+                  <label for="email">Электронная почта</label>
                   <input id="email" type="text" name="email" placeholder="Электронная почта">
                 </div>
                 <div class="form-field">
+                  <label for="password">Пароль</label>
                   <input id="password" type="password" name="password" placeholder="Пароль">
                 </div>
                 <button type="submit" class="btn" name="enter" value="Войти">Войти</button>
@@ -150,7 +153,7 @@
             Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </li>
           <li class="feature-item">
-            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус
+            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
           </li>
         </ul>
       </section>
@@ -161,7 +164,8 @@
       <div class="post">
         <p>Подпишитесь на нашу рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="" action="#" method="get">
-          <input class="email" type="email" name="email" placeholder="Электронная почта">
+          <label for="email-subscribe">Электронная почта</label>
+          <input id="email-subscribe" type="email" name="email" placeholder="Электронная почта">
           <button class="btn" type="submit" value="send">Отправить</button>
         </form>
       </div>
@@ -214,7 +218,6 @@
     <section class="modal modal-feedback">
       <h2 class="feedback-title">Мы обязательно вам ответим!</h2>
       <form class="feedback-form" action="#" method="post">
-      <!-- Поля завернул в <p>, т.к хочу сократить использование дивов -->
         <p>
           <input class="feedback-field" type="text" name="feedback-name" placeholder="Как вас зовут?">
         </p>
@@ -225,6 +228,7 @@
           <textarea class="feedback-textarea" type="text" name="feedback-message" placeholder="Напишите что-нибудь..."></textarea>
         </p>
         <button class="btn btn-feedback" type="submit">Отправить</button>
+        <button class="btn-close" type="button">Закрыть</button>
       </form>
     </section>
   </body>

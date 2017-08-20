@@ -28,6 +28,7 @@
           <li><a href="#"></a>
             <div class="popup-search">
               <form class="search" action="#" method="get">
+                <label for="search-field">Что ищем?</label>
                 <input id="search-field" type="text" name="search-field" placeholder="Что ищем?">
               </form>
             </div>
@@ -37,9 +38,11 @@
             <div class="popup-login">
               <form action="#" method="get">
                 <div class="form-field">
+                  <label for="email">Электронная почта</label>
                   <input id="email" type="text" name="email" placeholder="Электронная почта">
                 </div>
                 <div class="form-field">
+                  <label for="password">Пароль</label>
                   <input id="password" type="password" name="password" placeholder="Пароль">
                 </div>
                 <button type="submit" class="btn" name="enter" value="Войти">Войти</button>
@@ -57,7 +60,7 @@
                 <table class="basket-table">
                   <tr class="basket-table-item">
                     <td class="basket-table-column">
-                      <button type="button" class="button-remove">Удалить</button>
+                      <button class="btn-remove" type="button">Удалить</button>
                     </td>
                     <td class="basket-table-column">
                       <img src="img/cart-item-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
@@ -74,7 +77,7 @@
                   </tr>
                   <tr class="basket-table-item">
                     <td class="basket-table-column">
-                      <button type="button" class="button-remove">Удалить</button>
+                      <button class="btn-remove" type="button">Удалить</button>
                     </td>
                     <td class="basket-table-column">
                       <img src="img/cart-item-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
@@ -108,7 +111,7 @@
             <li class="breadcrumbs-item"><a href="#">Каталог</a></li>
             <li class="breadcrumbs-item">Сливочное</li>
           </ul>
-        <h1>Сливочное мороженое</h1>
+        <h1 class="catalog-title">Сливочное мороженое</h1>
         <form class="filters" action="#" method="get">
           <fieldset class="filter-item">
             <legend>Сортировка:</legend>
@@ -146,7 +149,7 @@
               <input id="jam" type="checkbox" name="filler" value="jam"><label for="jam">джемы</label>
             </div>
           </fieldset>
-          <input type="submit" value="Применить">
+          <button  class="btn "type="submit">Применить</button>
         </form>
         <section class="product-item">
         <h2 class="visually-hidden">Ассортимент продукции</h2>
