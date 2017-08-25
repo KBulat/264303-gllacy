@@ -476,11 +476,16 @@ div.post {
 
 /*Корзина*/
 
+.basket-item {
+  background-color: #f8f7f4;
+  border-radius: 5px;
+}
+
 .basket-table {
   font-size: 13px;
   line-height: 16px;
   color: #323232;
-  background-color: #f8f7f4;
+
 }
 
 .basket-item-price {
