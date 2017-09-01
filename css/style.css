@@ -783,25 +783,110 @@ textarea:focus {
 /*модальное окно*/
 
 .modal-feedback {
-  display: none;
+  box-sizing: border-box;
+  position: fixed;
+  top: 337px;
+  left: 50%;
+  margin-left: -13%;
+  width: 478px;
+  /*height: 443px;*/
+  padding: 17px 24px;
   background-color: #f8f7f4;
+  border-radius: 10px;
 }
 
+
+.btn-close {
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  width: 18px;
+  height: 18px;
+  font-size: 0;
+
+  cursor: pointer;
+}
+
+.btn-close::before,
+.btn-close::after {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  right: 16px;
+
+  width: 15px;
+  height: 3px;
+
+  background-color: #231f20;
+}
+
+.btn-close::before {
+  transform: rotate(45deg);
+}
+
+.btn-close::after {
+  transform: rotate(-45deg);
+}
+
+
 .modal-feedback h2 {
+  margin: 0;
+  margin-bottom: 18px;
   font-size: 24px;
   line-height: 28px;
   color: #323232;
 }
 
-.modal-feedback input {
+.modal-feedback input[type="text"] {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 14px;
+  width: 267px;
+  height: 44px;
   font-size: 16px;
   color: #999999;
   background-color: #ffffff;
   border: 2px solid #d3d3d2;
 }
 
+.modal-feedback input:focus,
+.modal-feedback input:hover,
+.modal-feedback textarea:focus,
+.modal-feedback textarea:hover {
+  border-color: #c7c6c5;
+}
+
+.modal-feedback input:active,
+.modal-feedback textarea:active {
+  border-color: #8fbdec;
+}
+
+.modal-feedback textarea {
+  margin: 0;
+  margin-bottom: 72px;
+  padding-left: 14px;
+
+  width: 428px;
+  height: 155px;
+
+  border: 2px solid #d3d3d2;
+
+}
+
 .modal-feedback input:hover {
-  border-color: 4px solid #c7c6c5;
+  border-color: 2px solid #c7c6c5;
+}
+
+.modal-feedback .btn-feedback {
+  position: absolute;
+  margin-bottom: 24px;
+
+  bottom: 0;
+  right: 24px;
+
+  width: 139px;
+  height: 44px;
 }
 
 
