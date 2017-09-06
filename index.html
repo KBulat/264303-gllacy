@@ -19,13 +19,13 @@
           </a>
           <nav class="main-navigation">
             <ul class="main-navigation-list">
-              <li class="main-navigation-item"><a href="#">Каталог</a></li>
+              <li class="main-navigation-item"><a class="main-navigation-item-link" href="#">Каталог</a></li>
                 <ul class="main-navigation-submenu">
                   <li class="submenu-item submenu-item-title"><a class="submenu-link" href="">Новинки</a></li>
                   <li class="submenu-item"><a class="submenu-link" href="catalog.html">Сливочное</a></li>
-                  <li class="submenu-item"><a class="submenu-link" href="">Щербеты</a></li>
-                  <li class="submenu-item"><a class="submenu-link" href="">Фруктовый лед</a></li>
-                  <li class="submenu-item"><a class="submenu-link" href="">Мелорин</a></li>
+                  <li class="submenu-item"><a class="submenu-link" href="#">Щербеты</a></li>
+                  <li class="submenu-item"><a class="submenu-link" href="#">Фруктовый лед</a></li>
+                  <li class="submenu-item"><a class="submenu-link" href="#">Мелорин</a></li>
                 </ul>
               <li class="main-navigation-item"><a href="#">Доставка и оплата</a></li>
               <li class="main-navigation-item"><a href="#">О Компании</a></li>
@@ -41,7 +41,7 @@
               </a>
               <div class="popup-search">
                 <form class="search" action="#" method="get">
-                  <label for="search-field">Что ищем?</label>
+                  <label class="visually-hidden" for="search-field">Что ищем?</label>
                   <input id="search-field" type="search" name="search-field" placeholder="Что ищем?">
                 </form>
               </div>
@@ -211,20 +211,22 @@
 
         <section class="map">
           <h2 class="visually-hidden">Контактная информация</h2>
-          <div class="contacts">
-            <p class="contacts-adress-title">
-              Адрес главного офиса
-              и офлайн магазина:
-            </p>
-            <b class="contacts-adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+          <div class="contacts-wrapper">
+            <div class="contacts">
+              <p class="contacts-adress-title">
+                Адрес главного офиса
+                и офлайн магазина:
+              </p>
+              <b class="contacts-adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
 
-            <p class="contacts-phone-title">
-              Для заказов по телефону:
-            </p>
+              <p class="contacts-phone-title">
+                Для заказов по телефону:
+              </p>
 
-            <b class="contacts-phone">8 812 450-25-25</b>
-            <p class="contacts-worktime">(с 10 до 20 ежедневно)</p>
-            <a class="btn btn-contacts" href="#">Форма обратной связи</a>
+              <b class="contacts-phone">8 812 450-25-25</b>
+              <p class="contacts-worktime">(с 10 до 20 ежедневно)</p>
+              <a class="btn btn-contacts" href="#">Форма обратной связи</a>
+            </div>
           </div>
         </section>
       </main>
