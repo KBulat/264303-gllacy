@@ -19,16 +19,16 @@
           </a>
           <nav class="main-navigation">
             <ul class="main-navigation-list">
-              <li class="main-navigation-item"><a class="main-navigation-item-link" href="#">Каталог</a></li>
+              <li class="main-navigation-item"><a class="main-navigation-link" href="#">Каталог</a></li>
                 <ul class="main-navigation-submenu">
-                  <li class="submenu-item submenu-item-title"><a class="submenu-link" href="">Новинки</a></li>
+                  <li class="submenu-item submenu-item-title"><a class="submenu-link" href="#">Новинки</a></li>
                   <li class="submenu-item"><a class="submenu-link" href="catalog.html">Сливочное</a></li>
                   <li class="submenu-item"><a class="submenu-link" href="#">Щербеты</a></li>
                   <li class="submenu-item"><a class="submenu-link" href="#">Фруктовый лед</a></li>
                   <li class="submenu-item"><a class="submenu-link" href="#">Мелорин</a></li>
                 </ul>
-              <li class="main-navigation-item"><a href="#">Доставка и оплата</a></li>
-              <li class="main-navigation-item"><a href="#">О Компании</a></li>
+              <li class="main-navigation-item"><a class="main-navigation-link" href="#">Доставка и оплата</a></li>
+              <li class="main-navigation-item"><a class="main-navigation-link" href="#">О Компании</a></li>
             </ul>
           </nav>
           <ul class="user-navigation">
@@ -51,22 +51,20 @@
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="">
                   <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g>
                 </svg>
-                Вход
+                <span>Вход</span>
               </a>
               <div class="popup-login">
-                <form action="#" method="post">
-                  <div class="form-field">
-                    <label for="email">Электронная почта</label>
-                    <input id="email" type="email" name="email" placeholder="Электронная почта">
-                  </div>
-                  <div class="form-field">
-                    <label for="password">Пароль</label>
-                    <input id="password" type="password" name="password" placeholder="Пароль">
-                  </div>
-                  <button type="submit" class="btn" name="enter" value="Войти">Войти</button>
-                  <div class="user-options">
-                    <a class="forgot-password" href="#">Забыли пароль?</a>
-                    <a class="registration-new" href="#">Новая регистрация</a>
+                <form class="popup-login-form" action="#" method="get">
+                  <label class="visually-hidden" for="email">Электронная почта</label>
+                  <input id="email" type="email" name="email" placeholder="Электронная почта">
+                  <label class="visually-hidden" for="password">Пароль</label>
+                  <input id="password" type="password" name="password" placeholder="Пароль">
+                  <div class="login-wrapper">
+                    <button class="btn login-btn" type="submit"  name="enter" value="Войти">Войти</button>
+                    <div class="user-options">
+                      <a class="forgot-password" href="#">Забыли пароль?</a>
+                      <a class="registration-new" href="#">Новая регистрация</a>
+                    </div>
                   </div>
                 </form>
               </div>
@@ -76,7 +74,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g fill="">
                   <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g>
                 </svg>
-                Пусто
+                <span>Пусто</span>
               </a>
             </li>
           </ul>
@@ -126,7 +124,7 @@
             <section class="product-item product-hit">
               <div class="product-item-info">
                 <img src="img/item-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                <p class="product-item-price">310 &#8381;<span>/кг</span></p>
+                <p class="product-item-price">310&#8381;<span>/кг</span></p>
                 <h3 class="product-item-name">
                   <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 </h3>
@@ -138,7 +136,7 @@
             <section class="product-item product-hit">
               <div class="product-item-info">
                 <img src="img/item-2.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                <p class="product-item-price">380 &#8381;<span>/кг</span></p>
+                <p class="product-item-price">380&#8381;<span>/кг</span></p>
                 <h3 class="product-item-name">
                   <a href="#">Сливочно-кофейное с кусочками шоколада</a>
                 </h3>
@@ -150,7 +148,7 @@
             <section class="product-item product-hit">
               <div class="product-item-info">
                 <img src="img/item-3.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                <p class="product-item-price">355 &#8381;<span>/кг</span></p>
+                <p class="product-item-price">355&#8381;<span>/кг</span></p>
                 <h3 class="product-item-name">
                   <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 </h3>
@@ -162,7 +160,7 @@
             <section class="product-item product-hit">
               <div class="product-item-info">
                 <img src="img/item-4.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                <p class="product-item-price">415 &#8381;<span>/кг</span></p>
+                <p class="product-item-price">415&#8381;<span>/кг</span></p>
                 <h3 class="product-item-name">
                   <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
                 </h3>
@@ -173,7 +171,7 @@
             </section>
           </div>
           <section class="features">
-            <h2 class="features-header">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+            <h2 class="features-header">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
             <ul class="feature-list">
               <li class="feature-item feature-equipment">
                 Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
@@ -198,11 +196,11 @@
             <section class="post">
               <h2 class="visually-hidden">Рассылка новостей</h2>
               <div class="post-wrapper">
-                <p>Подпишитесь на нашу рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                <form class="" action="#" method="get">
+                <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                <form class="post-form" action="#" method="get">
                   <label class="visually-hidden" for="email-subscribe">Электронная почта</label>
                   <input id="email-subscribe" type="email" name="email" placeholder="Электронная почта">
-                  <button class="btn" type="submit" value="send">Отправить</button>
+                  <button class="btn post-btn" type="submit" value="send">Отправить</button>
                 </form>
               </div>
             </section>
@@ -263,10 +261,10 @@
                   <a href="#">Для поставщиков</a>
                 </li>
                 <li class="footer-menu-item">
-                  <a href="#">О производстве</a>
+                  <a href="#">Наши документы</a>
                 </li>
                 <li class="footer-menu-item">
-                  <a href="#">Наши документы</a>
+                  <a href="#">О производстве</a>
                 </li>
                 <li class="footer-menu-item">
                   <a href="#">Экологические стандарты</a>
