@@ -179,7 +179,7 @@ input[type="radio"].visually-hidden {
 .main-navigation-submenu {
   position: absolute;
   width: 143px;
-  top: 55px;
+  top: 35px;
   padding-top: 10px;
   display: none;
   list-style: none;
@@ -190,11 +190,11 @@ input[type="radio"].visually-hidden {
   background-color: #f8f7f4;
 
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   z-index: 50;
 }
 
-.main-navigation-item:hover + .main-navigation-submenu {
+.main-navigation-item:hover  .main-navigation-submenu {
   display: block;
   z-index: 30;
 }
